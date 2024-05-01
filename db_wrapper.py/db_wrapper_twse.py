@@ -96,7 +96,7 @@ class GetStockData(GetData):
         return df
 
     def get_electric_trade_stastic(self):
-        dict_data=self.get_data_by_summary('上市個股日成交資訊')
+        dict_data=self.get_data_by_summary('電子式交易統計資訊')
         df = pd.DataFrame(dict_data)
         print(df)
         return df
